@@ -1,0 +1,8 @@
+- name: install packages
+  with_items:
+    - mlocate
+  package:
+    name: '{{ item }}'
+    state: '{{ mlocate_state }}'
+  tags:
+    - mlocate
