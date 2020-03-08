@@ -1,8 +1,12 @@
-- name: install packages
+# Standards: 0.1
+---
+- name: Install required packages
   with_items:
     - mlocate
   package:
-    name: '{{ item }}'
-    state: '{{ mlocate_state }}'
+    name: "{{ item }}"
+    state: "{{ mlocate_state }}"
   tags:
     - mlocate
+
+...

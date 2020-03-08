@@ -1,1 +1,6 @@
+# Standards: 0.1
+---
+# @var mlocate_state:description: State for the mlocate package
 mlocate_state: absent
+
+...
