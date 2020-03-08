@@ -1,30 +1,39 @@
 # mlocate
 
-TBD
+[![Build Status](https://cloud.drone.io/api/badges/rolehippie/mlocate/status.svg)](https://cloud.drone.io/rolehippie/mlocate)
 
+Ansible role to configure mlocate
 
-## Security
+## Table of content
 
-If you find a security issue please contact thomas@webhippie.de first.
+* [Default Variables](#default-variables)
+  * [mlocate_state](#mlocate_state)
+* [Dependencies](#dependencies)
+* [License](#license)
+* [Author](#author)
 
+---
 
-## Contributing
+## Default Variables
 
-Fork -> Patch -> Push -> Pull Request
+### mlocate_state
 
+State for the mlocate package
 
-## Authors
+#### Default value
 
-* [Thomas Boerger](https://github.com/tboerger)
+```YAML
+mlocate_state: absent
+```
 
+## Dependencies
+
+None.
 
 ## License
 
 Apache-2.0
 
+## Author
 
-## Copyright
-
-```
-Copyright (c) 2018 Thomas Boerger <thomas@webhippie.de>
-```
+Thomas Boerger
