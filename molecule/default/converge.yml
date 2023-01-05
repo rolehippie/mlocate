@@ -5,6 +5,6 @@
   vars:
     mlocate_state: present
   roles:
-    - role: mlocate
+    - role: rolehippie.mlocate
 
 ...
