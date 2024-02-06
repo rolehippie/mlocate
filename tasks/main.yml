@@ -1,9 +1,8 @@
-# Standards: 1.2
 ---
 - name: Install required packages
   with_items:
     - mlocate
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: "{{ mlocate_state }}"
   tags:
