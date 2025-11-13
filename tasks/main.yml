@@ -1,6 +1,6 @@
 ---
 - name: Install required packages
-  with_items:
+  loop:
     - mlocate
   ansible.builtin.package:
     name: "{{ item }}"
