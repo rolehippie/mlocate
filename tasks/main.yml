@@ -1,7 +1,7 @@
 ---
 - name: Install required packages
   loop:
-    - mlocate
+    - "{{ 'plocate' if ansible_facts['distribution_version'] is version('22.04', '>') else 'mlocate' }}"
   ansible.builtin.package:
     name: "{{ item }}"
     state: "{{ mlocate_state }}"

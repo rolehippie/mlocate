@@ -7,5 +7,5 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_is_installed(host):
-    pkg = host.package("mlocate")
-    assert pkg.is_installed
+    file = host.file("/usr/bin/locate")
+    assert file.is_executable
